@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZyricWear — Coming Soon</title>
+  <meta name="description" content="ZyricWear is coming soon to rule the world of fashion." />
+  <meta property="og:title" content="ZyricWear — Coming Soon" />
+  <meta property="og:description" content="We are coming soon to rule the world of fashion." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://zyricwear.com" />
+  <style>
+    :root {
+      --bg1: #0f0f10;
+      --bg2: #1b1b1f;
+      --accent: #f5b035;
+      --muted: #cfcfd6;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+      color: #fff;
+      background: radial-gradient(1200px 800px at 70% 20%, rgba(245,176,53,.12), transparent 50%),
+                  linear-gradient(135deg, var(--bg1), var(--bg2));
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+    .card {
+      width: min(920px, 92vw);
+      padding: clamp(24px, 3vw, 48px);
+      border-radius: 24px;
+      background: rgba(255,255,255,0.04);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 10px 40px rgba(0,0,0,.35);
+      text-align: center;
+    }
+    h1 {
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      margin: 0 0 8px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .tag {
+      display: inline-block;
+      padding: 6px 12px;
+      border: 1px dashed rgba(245,176,53,.7);
+      border-radius: 999px;
+      color: var(--accent);
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      font-size: .8rem;
+    }
+    p.lead {
+      margin: 8px auto 26px;
+      max-width: 56ch;
+      font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .btn {
+      padding: 12px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.06);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+    }
+    .btn:hover { transform: translateY(-2px); background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.28); }
+    .accent { background: var(--accent); color: #111; border-color: transparent; }
+    footer {
+      margin-top: 26px;
+      font-size: .9rem;
+      color: #a9a9b2;
+    }
+    .small { font-size: .88rem; color: #a9a9b2; }
+    .socials { display:flex; gap:12px; justify-content:center; margin-top:8px; }
+    .socials a svg { width: 22px; height:22px; vertical-align: middle; }
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-label="ZyricWear Coming Soon">
+    <div class="tag">Fashion Brand</div>
+    <h1>ZyricWear</h1>
+    <p class="lead">We are <strong>coming soon</strong> to rule the world of fashion. Premium streetwear, timeless silhouettes, and drops that sell out fast.</p>
+    <div class="actions">
+      <a class="btn accent" href="mailto:hello@zyricwear.com">Business Enquiries</a>
+      <a class="btn" href="#" aria-label="Instagram">Follow on Instagram</a>
+    </div>
+    <footer>
+      © 2025 ZyricWear. All rights reserved.
+      <div class="small">This is a temporary launch page.</div>
+    </footer>
+  </main>
+</body>
+</html>
